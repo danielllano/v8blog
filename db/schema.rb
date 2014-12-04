@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141204190109) do
+ActiveRecord::Schema.define(version: 20141204193817) do
 
   create_table "authors", force: true do |t|
     t.string   "name"
@@ -21,12 +21,14 @@ ActiveRecord::Schema.define(version: 20141204190109) do
 
   create_table "posts", force: true do |t|
     t.string   "title"
-    t.integer  "author_id",      limit: 255
+    t.integer  "author_id"
     t.date     "published_date"
     t.boolean  "published"
     t.text     "content"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "posts", ["author_id"], name: "index_posts_on_author_id"
 
 end

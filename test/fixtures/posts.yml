@@ -2,14 +2,14 @@
 
 one:
   title: MyString
-  author: MyString
-  published_date: 2014-12-03
+  author_id: 
+  published_date: 2014-12-04
   published: false
   content: MyText
 
 two:
   title: MyString
-  author: MyString
-  published_date: 2014-12-03
+  author_id: 
+  published_date: 2014-12-04
   published: false
   content: MyText

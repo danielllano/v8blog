@@ -23,7 +23,7 @@
           <% @posts.each do |post| %>
             <tr>
               <td><%= post.title %></td>
-              <td><%= post.author %></td>
+              <td><%= post.author.name %></td>
               <td><%= post.published_date %></td>
               <td><%= post.published %></td>
               <td><%= post.content %></td>
